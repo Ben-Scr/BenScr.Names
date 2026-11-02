@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "source_repository": "https://github.com/Ben-Scr/RandomNameGenerator",
+  "source_commit": "33c2cf9e4cdb57cb68628d57a1d2095d757d818e",
+  "source_package": "RandomNameGeneratorCS",
+  "source_version": "1.0.7",
+  "source_package_sha256": "fc0cc78fd324b1792a47b8954bc83e4b11b8b50f249891a85115a0db0669da13",
+  "target_repository": "https://github.com/Ben-Scr/BenScr.Names",
+  "target_package": "BenScr.Names",
+  "version": "1.0.0",
+  "frameworks": [
+    "net9.0",
+    "net10.0"
+  ],
+  "runtime_dependencies": [],
+  "legacy_members_mapped": 8,
+  "tests_per_framework": 34,
+  "published": false,
+  "verification_evidence": "artifacts/latest-verification.txt"
+}

@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFrameworks>net9.0;net10.0</TargetFrameworks>
+    <PackageId>BenScr.Names</PackageId>
+    <AssemblyName>BenScr.Names</AssemblyName>
+    <RootNamespace>BenScr.Names</RootNamespace>
+    <Version>1.0.0</Version>
+    <Authors>Ben Schneider</Authors>
+    <Description>Seeded name generation, immutable custom name catalogs and invariant casing with preserved embedded name lists.</Description>
+    <PackageTags>names;generation;deterministic;catalog</PackageTags>
+    <PackageProjectUrl>https://github.com/Ben-Scr/BenScr.Names</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/Ben-Scr/BenScr.Names</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+    <PackageIcon>icon.png</PackageIcon>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="../README.md" Pack="true" PackagePath="/" />
+    <None Include="../LICENSE.txt" Pack="true" PackagePath="/" />
+    <None Include="../branding/BenScr_Icon_Master.png" Pack="true" PackagePath="/icon.png" />
+    <InternalsVisibleTo Include="BenScr.Names.Tests" />
+    <EmbeddedResource Include="Resources/*.txt" />
+  </ItemGroup>
+</Project>

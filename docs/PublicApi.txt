@@ -1,0 +1,29 @@
+BenScr.Names.NameCasing : System.Enum
+  Field BenScr.Names.NameCasing InitialCapital
+  Field BenScr.Names.NameCasing Preserve
+  Field Int32 value__
+BenScr.Names.NameCatalog : System.Object
+  Constructor Void .ctor(System.Collections.Generic.IReadOnlyList`1[System.String], System.Collections.Generic.IReadOnlyList`1[System.String])
+  Field Int32 MaximumEntriesPerList
+  Field Int32 MaximumEntryLength
+  Field Int32 MaximumTotalCharacters
+  Method BenScr.Names.NameCatalog get_Default()
+  Method System.Collections.Generic.IReadOnlyList`1[System.String] get_FirstNames()
+  Method System.Collections.Generic.IReadOnlyList`1[System.String] get_LastNames()
+  Property BenScr.Names.NameCatalog Default
+  Property System.Collections.Generic.IReadOnlyList`1[System.String] FirstNames
+  Property System.Collections.Generic.IReadOnlyList`1[System.String] LastNames
+BenScr.Names.NameGenerator : System.Object
+  Constructor Void .ctor()
+  Constructor Void .ctor(BenScr.Names.NameCatalog)
+  Constructor Void .ctor(BenScr.Names.NameCatalog, UInt64, BenScr.Names.NameCasing)
+  Constructor Void .ctor(UInt64)
+  Field Int32 MaximumFirstNameParts
+  Field System.String AlgorithmId
+  Method Int32 FirstNamesCount()
+  Method Int32 LastNamesCount()
+  Method System.String FirstName()
+  Method System.String FullName(Int32)
+  Method System.String LastName()
+  Method System.String[] GetFirstNames()
+  Method System.String[] GetLastNames()

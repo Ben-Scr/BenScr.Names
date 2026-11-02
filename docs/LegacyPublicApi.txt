@@ -1,0 +1,9 @@
+BenScr.RandomNameGenerator.NameGenerator : System.Object
+  Constructor Void .ctor()
+  Method Int32 FirstNamesCount()
+  Method Int32 LastNamesCount()
+  Method System.String FirstName()
+  Method System.String FullName(Int32)
+  Method System.String LastName()
+  Method System.String[] GetFirstNames()
+  Method System.String[] GetLastNames()
